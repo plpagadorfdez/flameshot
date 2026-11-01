@@ -1720,6 +1720,20 @@ void CaptureWidget::initShortcuts()
                 m_selection,
                 SLOT(moveDown()));
 
+    newShortcut(QKeySequence(ConfigHandler().shortcut("TYPE_MOVE_MOUSE_LEFT")),
+                this,
+                SLOT(moveMouseLeft()));
+    newShortcut(QKeySequence(ConfigHandler().shortcut("TYPE_MOVE_MOUSE_RIGHT")),
+                this,
+                SLOT(moveMouseRight()));
+    newShortcut(QKeySequence(ConfigHandler().shortcut("TYPE_MOVE_MOUSE_UP")),
+                this,
+                SLOT(moveMouseUp()));
+    newShortcut(QKeySequence(ConfigHandler().shortcut("TYPE_MOVE_MOUSE_DOWN")),
+                this,
+                SLOT(moveMouseDown()));
+
+
     newShortcut(QKeySequence(ConfigHandler().shortcut("TYPE_CANCEL")),
                 this,
                 SLOT(cancel()));
@@ -2105,4 +2119,28 @@ void CaptureWidget::drawInactiveRegion(QPainter* painter)
 
     painter->setClipRegion(grey);
     painter->drawRect(-1, -1, rect().width() + 1, rect().height() + 1);
+}
+
+void CaptureWidget::moveMouseLeft()
+{
+    qDebug() << "Moving 1px left.";
+    // TODO: move mouse cursor to the left by 1px
+}
+
+void CaptureWidget::moveMouseRight()
+{
+    qDebug() << "Moving 1px right.";
+    // TODO: move mouse cursor to the right by 1px
+}
+
+void CaptureWidget::moveMouseUp()
+{
+    qDebug() << "Moving 1px up.";
+    // TODO: move mouse cursor up by 1px
+}
+
+void CaptureWidget::moveMouseDown()
+{
+    qDebug() << "Moving 1px down.";
+    // TODO: move mouse cursor down by 1px
 }

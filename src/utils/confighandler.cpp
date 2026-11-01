@@ -196,6 +196,10 @@ static QMap<QString, QSharedPointer<KeySequence>> recognizedShortcuts = {
     SHORTCUT("TYPE_MOVE_RIGHT"          ,   "Right"                 ),
     SHORTCUT("TYPE_MOVE_UP"             ,   "Up"                    ),
     SHORTCUT("TYPE_MOVE_DOWN"           ,   "Down"                  ),
+    SHORTCUT("TYPE_MOVE_MOUSE_LEFT"     ,   "Ctrl+Left"             ),
+    SHORTCUT("TYPE_MOVE_MOUSE_RIGHT"    ,   "Ctrl+Right"            ),
+    SHORTCUT("TYPE_MOVE_MOUSE_UP"       ,   "Ctrl+Up"               ),
+    SHORTCUT("TYPE_MOVE_MOUSE_DOWN"     ,   "Ctrl+Down"             ),
     SHORTCUT("TYPE_COMMIT_CURRENT_TOOL" ,   "Ctrl+Return"           ),
 #if defined(Q_OS_WIN)
     SHORTCUT("TAKE_SCREENSHOT"          ,   "Meta+Shift+x"          ),

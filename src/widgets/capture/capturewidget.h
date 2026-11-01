@@ -63,6 +63,11 @@ public:
 public slots:
     bool commitCurrentTool();
     void deleteToolWidgetOrClose();
+    
+    void moveMouseLeft();
+    void moveMouseRight();
+    void moveMouseUp();
+    void moveMouseDown();
 
 signals:
     void colorChanged(const QColor& c);

@@ -198,6 +198,10 @@ void ShortcutsWidget::loadShortcuts()
     appendShortcut("TYPE_MOVE_RIGHT", tr("Move selection right 1px"));
     appendShortcut("TYPE_MOVE_UP", tr("Move selection up 1px"));
     appendShortcut("TYPE_MOVE_DOWN", tr("Move selection down 1px"));
+    appendShortcut("TYPE_MOVE_MOUSE_LEFT", tr("Move mouse cursor left 1px"));
+    appendShortcut("TYPE_MOVE_MOUSE_RIGHT", tr("Move mouse cursor right 1px"));
+    appendShortcut("TYPE_MOVE_MOUSE_UP", tr("Move mouse cursor up 1px"));
+    appendShortcut("TYPE_MOVE_MOUSE_DOWN", tr("Move mouse cursor down 1px"));
     appendShortcut("TYPE_COMMIT_CURRENT_TOOL", tr("Commit text in text area"));
     appendShortcut("TYPE_DELETE_CURRENT_TOOL",
                    tr("Delete selected drawn object"));
